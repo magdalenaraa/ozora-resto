@@ -13,6 +13,12 @@ h1 {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+h3 {
+    font-size: 70px;
+    font-family: 'Noto Serif JP', serif;
+    color: #233253;
+}
+
 #bg-resto {
     background-color: #daeffa;
     padding: 15px 0;
@@ -22,7 +28,7 @@ h1 {
     max-width: 990px;
     background: #fff;
     margin: 50px auto;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 1px 1px 25px rgb(0 0 0 / 35%);
 }
 
@@ -33,6 +39,8 @@ h1 {
     position: relative;
     align-items: center;
     justify-content: end;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .banner{
     background-image: url(./data/Group\ 1.png);
@@ -43,6 +51,8 @@ h1 {
     display: inline-block;
     justify-content: end;
     align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .title img {
@@ -128,16 +138,139 @@ h1 {
     box-shadow: -1px 5px 26px -2px rgba(0,0,0,0.42);
 }
 
-#mid {
+.mid {
     background-image: url(./data/web-ozora-resto_02.jpg);
     background-repeat: no-repeat;
-    min-height: 2464px;
+    min-height: 2365px;
     position: relative;
     align-items: center;
     justify-content: end;
 }
 
-.snow-1 img {
+#menu {  
+    max-width: 850px;
+    margin: 0 auto;
+    padding-top: 100px;
+    position: relative;
+    z-index: 5;
+    display: block;
+    justify-content: center;
+}
+
+.first-menu{
+    background-image: url(./data/listbox-karee.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 45px;
+    display: block;
+    padding: 40px 35px;
+    margin-top: 110px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    box-sizing: border-box;
+    height: 550px;
+    width: 850px;
+    position: relative;
+}
+
+.menu-title {
     position: absolute;
-    top: -85px;
+    top: -70px;
+    display: block;
+    width: 615px;
+    margin-left: 80px;
+    margin-right: auto;
+}
+
+.menu-display {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.description p {
+    font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #d9dced;
+    font-weight: 700;
+    text-align: left;
+}
+
+.description blockquote {
+    margin-top: 60px;
+    margin-right: 20px;
+}
+
+.description blockquote p {
+    color: #233253;
+    margin: 0;
+    text-align: justify;
+    line-height: 36px;
+}
+
+.food-image img {
+    transition: all 0.3s;
+}
+.food-image:hover img {
+    transform: rotate(90deg);
+}
+
+.second-menu{
+    background-image: url(./data/listbox-ramen.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 45px;
+    display: block;
+    padding: 40px 35px;
+    margin-top: 170px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    box-sizing: border-box;
+    height: 550px;
+    width: 850px;
+    position: relative;
+}
+
+.third-menu{
+    background-image: url(./data/listbox-hitsu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 45px;
+    display: block;
+    padding: 40px 35px;
+    margin-top: 170px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    box-sizing: border-box;
+    height: 550px;
+    width: 850px;
+    position: relative;
+}
+
+.third-menu> .food-image:hover img {
+    transition: all 0.3s;
+}
+.food-image:hover img {
+    transform: rotate(20deg);
+}
+
+.bottom {
+    background-image: url(./data/png-transparent-hardwood-wood-stain-varnish-wood-flooring-wood-texture-brown-wood-material.png);
+    background-position: center;
+    min-height: 595px;
+    position: relative;
+    align-items: center;
+    justify-content: end;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.coupon {
+    max-width: 990px;
+    display: flex;
+    justify-content: center;
+}
+
+.coupon img {
+    margin-top: 40px;
 }
