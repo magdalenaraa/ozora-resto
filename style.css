@@ -20,8 +20,14 @@ h3 {
 }
 
 #bg-resto {
-    background-color: #daeffa;
+    background-color: #c0e1f3;
     padding: 15px 0;
+    background-image: url(./data/snow1.png), url(./data/snow2.png), url(./data/snow3.png);  
+    animation: snow 20s linear infinite;
+}     
+@keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px}
 }
 
 .resto-body {
@@ -30,6 +36,7 @@ h3 {
     margin: 50px auto;
     border-radius: 20px;
     box-shadow: 1px 1px 25px rgb(0 0 0 / 35%);
+    z-index: 5;
 }
 
 #top {
@@ -41,6 +48,10 @@ h3 {
     justify-content: end;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    z-index: 5;
+    box-shadow: 0px 6px 13px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 6px 13px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 13px -1px rgba(0,0,0,0.75);;
 }
 .banner{
     background-image: url(./data/Group\ 1.png);
@@ -110,6 +121,17 @@ h3 {
     color: #fff;
     border-radius: 20px;
     box-shadow: -1px 5px 26px -2px rgba(0,0,0,0.42);
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.karee:hover, .karee:focus, .karee:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.70));
 }
 
 .buttons .ramen {
@@ -123,6 +145,17 @@ h3 {
     color: #fff;
     border-radius: 20px;
     box-shadow: -1px 5px 26px -2px rgba(0,0,0,0.42);
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.ramen:hover, .ramen:focus, .ramen:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.70));
 }
 
 .buttons .hitsu {
@@ -136,12 +169,24 @@ h3 {
     color: #fff;
     border-radius: 20px;
     box-shadow: -1px 5px 26px -2px rgba(0,0,0,0.42);
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
 }
+.hitsu:hover, .hitsu:focus, .hitsu:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.70));
+}
+
 
 .mid {
     background-image: url(./data/web-ozora-resto_02.jpg);
     background-repeat: no-repeat;
-    min-height: 2365px;
+    min-height: 2350px;
     position: relative;
     align-items: center;
     justify-content: end;
@@ -150,7 +195,7 @@ h3 {
 #menu {  
     max-width: 850px;
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 90px;
     position: relative;
     z-index: 5;
     display: block;
@@ -194,6 +239,14 @@ h3 {
     color: #d9dced;
     font-weight: 700;
     text-align: left;
+    margin-left: 40px;
+}
+
+.first-menu .description p {
+    font-size: 16px;
+}
+.first-menu .description blockquote {
+    font-size: 20px;
 }
 
 .description blockquote {
@@ -254,23 +307,62 @@ h3 {
     transform: rotate(20deg);
 }
 
-.bottom {
+#bottom {
     background-image: url(./data/png-transparent-hardwood-wood-stain-varnish-wood-flooring-wood-texture-brown-wood-material.png);
     background-position: center;
-    min-height: 595px;
+    min-height: 550px;
     position: relative;
     align-items: center;
     justify-content: end;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    z-index: 5;
+    box-shadow: -1px -5px 15px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px -5px 15px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -5px 15px -1px rgba(0,0,0,0.75);
 }
 
 .coupon {
     max-width: 990px;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .coupon img {
     margin-top: 40px;
+    pointer-events: none;
+    transition-property: transform;
+    transition-duration: .3s;
+}
+.coupon:hover img {
+    transform: rotate(-3deg) scale(1.1) translateZ(0);
+    -webkit-filter: drop-shadow(0 20px 20px  rgba(0, 0, 0, 0.70));
+    filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.70));
+}
+
+.access {
+    background-image: url(./data/bottom.png);
+    background-size: cover;
+    min-height: 300px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#kana {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 50px;
+    position: relative;
+    z-index: 5;
+}
+
+.access p {
+    font-size: 24px;
+    color: rgb(209, 209, 209);
+    font-family: 'Noto Serif JP', serif;
+    margin-left: 45px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
