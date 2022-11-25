@@ -202,7 +202,7 @@ h3 {
     justify-content: center;
 }
 
-.first-menu{
+#karee{
     background-image: url(./data/listbox-karee.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -242,10 +242,10 @@ h3 {
     margin-left: 40px;
 }
 
-.first-menu .description p {
+#karee .description p {
     font-size: 16px;
 }
-.first-menu .description blockquote {
+#karee .description blockquote {
     font-size: 20px;
 }
 
@@ -268,7 +268,7 @@ h3 {
     transform: rotate(90deg);
 }
 
-.second-menu{
+#ramen {
     background-image: url(./data/listbox-ramen.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -284,7 +284,7 @@ h3 {
     position: relative;
 }
 
-.third-menu{
+#hitsumabushi{
     background-image: url(./data/listbox-hitsu.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -365,4 +365,127 @@ h3 {
     font-weight: 500;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #bg-resto {
+        width: 750px;
+
+    }
+    .resto-body {
+        max-width: 990px;
+    }
+    #top {
+        min-height: 700px;
+    }
+    .banner {
+        max-width: 750px;
+        background-position: center;
+        background-size: cover;
+        min-height: 550px;
+    }
+    .title img {
+        width: 750px;
+        height: 300px;
+    }
+    .food-1 img {
+        width: 200px;
+        height: 170px;
+    }
+    .food-2 img {
+        width: 200px;
+        height: auto;
+    }
+    .food-3 img {
+        width: 200px;
+        height: auto;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .buttons .karee {
+        font-size: 18px;
+    }
+    .buttons .ramen {
+        font-size: 18px;
+    }
+    .buttons .hitsu {
+        font-size: 18px;
+    }
+    .buttons {
+        padding-bottom: 20px;
+    }
+    .mid {
+        min-height: 2080px;
+    }
+    #menu {
+        max-width: 750px;
+        padding-top: 55px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #karee {
+        width: 710px;
+        height: 500px;
+    }
+    .menu-title {
+        margin-left: 20px;
+    }
+    .menu-display {
+        margin-top: 70px;
+    }
+    .food-image img {
+        width: 300px;
+        height: auto;
+    }
+    #karee .description p {
+        font-size: 14px;
+    }
+    #karee .description blockquote {
+        font-size: 16px;
+    }
+    #ramen {
+        width: 710px;
+        height: 500px;
+        margin-top: 150px;
+    }
+    #hitsumabushi {
+        width: 710px;
+        height: 500px;
+        margin-top: 150px;
+    }
+    .description p {
+        font-size: 15px;
+    }
+    .description blockquote {
+        font-size: 15px;
+    }
+    #hitsumabushi .description p {
+        font-size: 14px;
+    }
+    .coupon {
+        max-width: 768px;
+    }
+    .coupon img {
+        width: 700px;
+        height: auto;
+        margin-top: 30px;
+    }
+    #kana {
+        padding-top: 30px;
+    }
+    #kana img {
+        width: 200px;
+        height: auto;
+    }
+    .access p {
+        font-size: 20px;
+    }
+    .access {
+        min-height: 250px;
+    }
+    #bottom {
+        min-height: 450px;
+    }
 }
