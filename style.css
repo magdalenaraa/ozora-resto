@@ -440,10 +440,10 @@ h3 {
         height: auto;
     }
     #karee .description p {
-        font-size: 14px;
+        font-size: 13px;
     }
     #karee .description blockquote {
-        font-size: 16px;
+        font-size: 13px;
     }
     #ramen {
         width: 710px;
@@ -456,13 +456,13 @@ h3 {
         margin-top: 150px;
     }
     .description p {
-        font-size: 15px;
+        font-size: 13px;
     }
     .description blockquote {
-        font-size: 15px;
+        font-size: 13px;
     }
     #hitsumabushi .description p {
-        font-size: 14px;
+        font-size: 13px;
     }
     .coupon {
         max-width: 768px;
@@ -489,3 +489,17 @@ h3 {
         min-height: 450px;
     }
 }
+
+@media only screen and (max-width: 425px) {
+    .resto-body {
+        margin-right: 10px;
+    }
+    .banner {
+        margin-right: 10px;
+        width: 740px;
+    }
+    .title img {
+        width: 740px;
+    }
+}
+
