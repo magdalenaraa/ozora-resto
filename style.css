@@ -71,26 +71,32 @@ h3 {
     height: 350px;
 }
 
-.food-img-top {
+.circle-slider {
+    width: 100%;
+}
+
+.circle-wrapper {
     display: flex;
-    justify-content: space-around;
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 100%;
 }
 
-.food-1 img {
-    width: 247px;
-    height: 200px;
+.circle {
+    width: 25%;
+    background: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.food-2 img {
-    width: 235px;
-    height: 235px;
+.circle img {
+    width: 65%;
+    display: block;
 }
 
-.food-3 img {
-    width: 230px;
-    height: 230px;
+.swiper-slide-active {
+    margin-top: 40px;
+    width: 40%;
 }
 
 .special-menu {
